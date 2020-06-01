@@ -19,7 +19,7 @@ class KategoriBarang:
         else:
             print("Kategori kosong")
 
-    def _menu_2(self):
+    def _menu_2(self) :
         print("\n")
         name = input("Masukkan nama kategori : ")
         if self._add_kategori(name):
