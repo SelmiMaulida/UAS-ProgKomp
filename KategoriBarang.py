@@ -17,6 +17,7 @@ class KategoriBarang:
             for text in kategori:
                 print(text)
         else:
+            
             print("Kategori kosong")
 
     def _menu_2(self) :
