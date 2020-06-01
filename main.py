@@ -1,6 +1,5 @@
 from KategoriBarang import KategoriBarang
 
-
 class MainMenu:
     def switch(self, kode):
         return getattr(self, "_menu_" + str(kode), lambda: self._default)()
@@ -24,7 +23,6 @@ class MainMenu:
 
     def _menu_2(self):
         print("menu 2")
-
 
 if __name__ == "__main__":
     menu = MainMenu()
