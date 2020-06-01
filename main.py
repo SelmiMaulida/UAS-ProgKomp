@@ -17,7 +17,7 @@ class MainMenu:
             print("\t1. Lihat Kategori"
                   "\t2. Tambah Kategori\n"
                   "\t3. Hapus Kategori")
-            menu_kode = int(input("PIlihan : "))
+            menu_kode = int(input("Pilihan : "))
             menuKategori.switch(menu_kode)
             _iterasi = True if (input("do you want to quit?(y/n) ") == "n") else False
 
