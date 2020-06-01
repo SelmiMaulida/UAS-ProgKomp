@@ -33,8 +33,7 @@ if __name__ == "__main__":
     while iterasi:
         print("\tPilihan menu")
         print("\t 1. Edit Kategori\n"
-              "\t 2. Pesanan Customer\n"
-              "\t 3. Pengiriman Barang\n")
+              "\t 2. Pesanan Customer\n")
         menu_kode = int(input("Pilih menu : "))
         menu.switch(menu_kode)
         iterasi = True if(input("start again?(y/n) ") == "y") else False
