@@ -10,7 +10,7 @@ class MainMenu:
 
     def _menu_1(self):
         print("\n\n")
-        _iterasi = True
+        _iterasi = True 
         menuKategori = KategoriBarang()
         while _iterasi:
             print("\tKategori Barang")
