@@ -35,3 +35,4 @@ if __name__ == "__main__":
         menu_kode = int(input("Pilih menu : "))
         menu.switch(menu_kode)
         iterasi = True if(input("start again?(y/n) ") == "y") else False
+        
