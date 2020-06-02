@@ -6,13 +6,14 @@ class MenuNegara:
     def __init__(self):
         __file = open("country_list.txt", "a")
         __file.close()
-
+    #def untuk switch
     def switch(self, kode):
         return getattr(self, "_menu_" + str(kode), lambda: self._default)()
 
     def _default(self):
         print("invalid code, pick again")
-    
+        
+    #def untuk input nama negara dan kurs mata uang
     def _menu_1(self):
         print("\n")
         country_name = input("Masukkan nama negara : ")
@@ -69,7 +70,7 @@ class MenuNegara:
         __file = open("country_list.txt", "r")
         country_list = __file.readlines()
         __file.close()
-        for index, country in enumerate(country_list):
+        for index, country in enumerate(country_list): #enumerate berfungsi untuk menambahkan penghitung dalam iterasi, kemudian dikembalikan dalam objek enumerasi yang dapat digunakan secara langsung untuk loop atau dikonversi menjadi daftar tuple melalui metode list
             country_list[index] = country.split(",")[0]
         return country_list
         
