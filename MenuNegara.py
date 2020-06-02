@@ -6,6 +6,7 @@ class MenuNegara:
     def __init__(self):
         __file = open("country_list.txt", "a")
         __file.close()
+    
     #def untuk switch
     def switch(self, kode):
         return getattr(self, "_menu_" + str(kode), lambda: self._default)()
@@ -25,7 +26,8 @@ class MenuNegara:
             print("Berhasil menambahkan negara")
         else:
             print("Negara sudah ada")
-          
+    
+    #def untuk mengedit daftar barang
     def _menu_2(self):
         print("\n")
         if len(self.listNegara())!=0:
@@ -40,7 +42,8 @@ class MenuNegara:
                 iterasi = True if input("do you want to quit? (y/n) ") == "n" else False
         else:
             print("Negara belum ada, silahkan menambahkan negara terlebih dahulu")
-            
+    
+    #def untuk menghapus data negara
     def _menu_3(self):
         print("\n")
         if len(self.listNegara()) != 0:
@@ -73,5 +76,15 @@ class MenuNegara:
         for index, country in enumerate(country_list): #enumerate berfungsi untuk menambahkan penghitung dalam iterasi, kemudian dikembalikan dalam objek enumerasi yang dapat digunakan secara langsung untuk loop atau dikonversi menjadi daftar tuple melalui metode list
             country_list[index] = country.split(",")[0]
         return country_list
-        
-        
+    
+    #def untuk menambahkan atau menghapus barang
+    def _menuEditBarangNegara(self, index_country):
+        print("\n")
+        menu_barang = BarangJual(self.listNegara()[index_country])
+        menu_barang.listBarang()
+        print("1. Tambah Barang")
+        print("2. Hapus Barang")
+        code_menu = input("Pilihan : ")
+
+        menu_barang.switch(code_menu)
+
