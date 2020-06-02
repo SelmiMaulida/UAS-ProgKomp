@@ -43,6 +43,15 @@ class Person:
             __file.close()
        else:
             print("Produk telah ditambahkan")
+   
+   def _get_list_product(self):
+       __file = open(self._name_kategori_file, "r")
+       list_beli = __file.readlines()
+       for index, item in enumerate(list_beli):
+           list[index] = item.split(",")[0]
+       return list_beli
+            
+        
         
             
        
