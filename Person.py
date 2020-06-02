@@ -34,3 +34,15 @@ class Person:
           jumlah_barang = int(input("Jumlah barang : "))
           menuPerson.add_product(menuBarang.listBarang()[index_country], jumlah_barang)
           print("Berhasil menambahkan data!")
+          iterasi = True if input("ingin menambahkan barang lagi?(y/n)") == "y" else False
+          
+   def add_product(self, product, amount):
+       if product not in self.get_list_product():
+            __file = open(self._name_kategori_file, "a")
+            __file.writer(product + "," amount)
+            __file.close()
+       else:
+            print("Produk telah ditambahkan")
+        
+            
+       
