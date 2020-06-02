@@ -1,5 +1,5 @@
 import os
-
+#digunakan untuk import modul
 
 class Person:
   _person_name = ""
