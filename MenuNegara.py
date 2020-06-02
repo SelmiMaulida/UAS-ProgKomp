@@ -55,4 +55,22 @@ class MenuNegara:
             print("Berhasil menghapus negara beserta semua datanya")
         else:
             print("Negara belum ada, silahkan menambahkan negara terlebih dahulu")
+            
+    def _update_country(self, list):
+        __file = open("country_list.txt", "w")
+        __file.writelines(list)
+        __file.close()
 
+    def _get_raw_country(self):
+        __file = open("country_list.txt", "r")
+        return __file.readlines()
+
+    def listNegara(self):
+        __file = open("country_list.txt", "r")
+        country_list = __file.readlines()
+        __file.close()
+        for index, country in enumerate(country_list):
+            country_list[index] = country.split(",")[0]
+        return country_list
+        
+        
