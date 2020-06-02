@@ -3,6 +3,16 @@ from Barang import BarangJual
 
 class MenuNegara:
   
+    def __init__(self):
+        __file = open("country_list.txt", "a")
+        __file.close()
+
+    def switch(self, kode):
+        return getattr(self, "_menu_" + str(kode), lambda: self._default)()
+
+    def _default(self):
+        print("invalid code, pick again")
+    
     def _menu_1(self):
         print("\n")
         country_name = input("Masukkan nama negara : ")
