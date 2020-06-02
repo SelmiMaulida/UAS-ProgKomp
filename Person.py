@@ -15,27 +15,6 @@ class Person:
       # membuat file melalui program
       __file = open(self._name_kategori_file, "a") # a untuk append data text
       __file.close()
-    
-    
-  def _menu_1(self):
-      name_person = input("Masukkan nama pemesan : ")
-      
-      _file = open("person.txt", "a")
-      _file.write(name_person)
-      _file.close()
-      
-      produk_iterasi = True
-      while produk_iterasi:
-          menuBarang = BarangJual(menuNegara.listNegara()[index_country])
-          menuPerson = Person(menuNegara.listNegara()[index_country], name_person)
-          print("Pilih produk : ")
-          for index, product in enumerate(menuBarang.listBarang()):
-              print(str(index + 1) + ". " + product)
-          index_product = int(input("Pilihan : "))
-          jumlah_barang = int(input("Jumlah barang : "))
-          menuPerson.add_product(menuBarang.listBarang()[index_country], jumlah_barang)
-          print("Berhasil menambahkan data!")
-          iterasi = True if input("ingin menambahkan barang lagi?(y/n)") == "y" else False
           
    #fungsi untuk menambah produk       
    def add_product(self, product, amount):
