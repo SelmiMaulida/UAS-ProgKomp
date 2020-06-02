@@ -1,7 +1,7 @@
-from MenuNegara import MenuNegara
+from MenuNegara import MenuNegara #import dari MenuNegara.py untuk diproses pada main menu
 
 class MainMenu :
-  def switch(self, kode) :
+  def switch(self, kode) : 
     return getattr(self, "_menu_" + str(kode), lambda: self._default)()
   
   def _default(self) :
@@ -12,7 +12,7 @@ class MainMenu :
     _iterasi = True
     menuNegara = MenuNegara()
     
-    while _iteras :
+    while _iterasi :
       print("\tNegara JasTip")
       if len(menuNegara.listNegara()) != 0:
          print(menuNegara.listNegara())
