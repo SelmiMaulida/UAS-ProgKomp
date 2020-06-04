@@ -30,7 +30,7 @@ class BarangJual:
 
     def _menu_1(self):
         name = input("Masukkan nama kategori : ")
-        harga = input("Masukkan harga(" + self._country_name + ") : ")
+        harga = float(input("Masukkan harga(" + self._country_name + ") : "))
         if self._add_kategori(name, harga):
             print("Kategori telah di tambahkan :")
             print(self._get_kategori())
@@ -73,7 +73,7 @@ class BarangJual:
     def _add_kategori(self, kategori, harga):
         if len(self._get_kategori()) == 0 or kategori not in self._get_kategori():
             __file = open(self._name_kategori_file, "a")
-            __file.write(kategori + "," + harga + "\n")
+            __file.write(kategori + "," + str(harga) + "\n")
             __file.close()
             return True
         else:
