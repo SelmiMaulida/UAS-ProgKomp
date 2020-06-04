@@ -19,7 +19,7 @@ class Person:
    def add_product(self, product, amount):
        if product not in self.get_list_product():
             __file = open(self._name_kategori_file, "a")
-            __file.writer(product + "," amount)
+            __file.writer(product + "," str(amount) + "\n")
             __file.close()
        else:
             print("Produk telah ditambahkan")
@@ -35,6 +35,20 @@ class Person:
        for index, item in enumerate(list_beli): #enumerate berfungsi untuk menambahkan penghitung dalam iterasi, kemudian dikembalikan dalam objek enumerasi yang dapat digunakan secara langsung untuk loop atau dikonversi menjadi daftar tuple melalui metode list
            list_beli[index] = item.split(",")[0]
        return list_beli
+    
+    #fungsi untuk menghapus pesanan ketika barang dihapus dari list
+    def delete_product(self,product_name):
+        if product_name in self._get_list_product():
+           index_product = self._get_list_product().index(product_name)
+           list_raw = self.get_raw_product()
+           del list_raw[index_product]
+           self._update_product(list_raw)
+          
+   def _update_product(self, list_product):
+       __file = open(self._name_kategori_file, "w")
+       __file.writerlines(list_product)
+       __file.close()
+      
             
         
         
