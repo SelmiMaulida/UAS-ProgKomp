@@ -13,13 +13,13 @@ Untuk menghindari kesalahan dalam pembelian barang oleh pelaku jastip, program a
 
 ## Tahapan penggunaan program aplikasi pendataam jasa titip luar negeri :
 a) Menampilkan pilihan menu awal, pengguna diminta input menu yang dipilih.
-* `1. List Negara`
-* `2. Mulai Pendataan Pesanan`
+`1. List Negara`
+`2. Mulai Pendataan Pesanan`
 
 b) Apabila pengguna memilih `1. List Negara`, maka akan muncul daftar Negara Jastip dan sub menu :
-* `1. Tambah Negara`
-* `2. Edit Barang Negara`
-* `3. Hapus Negara`
+`1. Tambah Negara
+2. Edit Barang Negara
+3. Hapus Negara`
 
 c) Jika daftar Negara Jastip masih kosong, pengguna akan diarahkan untuk menambahkan negara.
 
