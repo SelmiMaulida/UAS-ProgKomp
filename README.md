@@ -10,12 +10,12 @@ Selain itu, tersedia juga layanan konversi mata uang, sehingga pelaku jastip tid
         *3. Menyimpan database pesanan dan pelanggan dalam bentuk csv/excel
 Tahapan penggunaan program aplikasi pendataam jasa titip luar negeri :
 a)Menampilkan pilihan menu awal, pengguna diminta input menu yang dipilih.
-        *1. List Negara
-        *2. Mulai Pendataan Pesanan
+        *`1. List Negara`
+        *`2. Mulai Pendataan Pesanan`
 b)Apabila pengguna memilih “1. List Negara”, maka akan muncul daftar Negara Jastip dan sub menu :
-        *1. Tambah Negara
-        *2. Edit Barang Negara
-        *3. Hapus Negara
+        *`1. Tambah Negara`
+        *`2. Edit Barang Negara`
+        *`3. Hapus Negara`
 c)Jika daftar Negara Jastip masih kosong, pengguna akan diarahkan untuk menambahkan negara.
 d)Jika daftar Negara Jastip telah tercetak, maka pengguna dapat memilih opsi “2. Edit Barang Negara” atau “3. Hapus Negara”.
 e)Jika pengguna memilih opsi “2. Edit Barang Negara”, maka pengguna diminta input nama negara, dan nilai kurs mata uang negara tersebut ke dalam rupiah, lalu program akan menyimpan data.
