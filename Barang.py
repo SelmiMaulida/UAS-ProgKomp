@@ -1,6 +1,6 @@
 import os
 import shutil
-
+from Person import Person
 
 class BarangJual:
     _name_kategori_file = ""
@@ -43,6 +43,9 @@ class BarangJual:
         if len(self._get_kategori()) != 0:
             index_barang = int(input("Pilih barang yang ingin di hapus: ")) - 1
             list_raw = self._get_raw_kategori()
+            list_person = open(os.path.join(self._country_name, "person.txt"), "r").readlines()
+            for person in list_person:
+                Person(self._country_name,person.replace("\n","")).delete_product(self.get_kategori()[index_barang])
             del list_raw[index_barang]
             self._update_barang(list_raw)
             self.listBarang()
