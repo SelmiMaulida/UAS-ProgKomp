@@ -42,21 +42,22 @@ class MainMenu :
         print("\n")
         print("\t JasTip Negara" + menuNegara.listNegara()[index_country] + "\n")
         print("Menu JasTip :")
-        print("\t1. Lihat Pesanan")
-        print("\t2. Tambah Pesanan")
-        print("\t3. Hapus Pesanan")
+        print("\t1. Tambah Pesanan")
+        print("\t2. Hapus Pesanan")
         
 if __name__ == "__main__":
   menu = MainMenu()
   iterasi = True
-  print("\t\t Program Start")
+   print("--------------------------------------------------------------------")
+   print("----------SELAMAT DATANG DI JASA TITIP BARANG LUAR NEGERI-----------")
+   print("--------------------------------------------------------------------")
   while iterasi :
     print("\tPilih menu")
     print("\t 1. List Negara\n"
           "\t 2. Mulai Pendataan Pesanan")
     menu_kode = int(input("pilihan menu :")
     menu.switch(menu_kode)
-    iterasi = True if (input("start again ? (y/n)") == "y") else False
+    iterasi = True if (input("start again ? (y/n)") == "y") else print("Terimakasih sudah menggunakan Program ini:) . Pesanan dapat dilihat pada file pesanan.csv")
                     
           
     
