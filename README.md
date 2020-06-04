@@ -1,8 +1,9 @@
 # UAS-ProgKomp
 Repositori untuk menyimpan UAS Progkomp 2020
-                                       Penjelasan Program Pendataan Jasa Titip Luar Negeri
+        
+                                  Penjelasan Program Pendataan Jasa Titip Luar Negeri
 
-  Program aplikasi pendataan jasa titip luar negeri dirancang khusus bagi pengguna yang memiliki usaha jasa titip barang dari luar negeri. Dengan adanya program ini, diharapkan pelaku jastip lebih mudah, cepat, dan efisien dalam merekap transaksi pesanan dari pembeli yang berada di Indonesia. Untuk menghindari kesalahan dalam pembelian barang oleh pelaku jastip, program aplikasi ini mampu mengelompokkan pesanan berdasarkan jenis barang dan negara tujuan barang yang dipesan oleh customer. Selain itu, tersedia juga layanan konversi mata uang, sehingga pelaku jastip tidak perlu kesulitan dalam mengonversi mata uang luar negeri ke rupiah. Beberapa fitur yang ditawarkan oleh program ini, yaitu :
+Program aplikasi pendataan jasa titip luar negeri dirancang khusus bagi pengguna yang memiliki usaha jasa titip barang dari luar negeri. Dengan adanya program ini, diharapkan pelaku jastip lebih mudah, cepat, dan efisien dalam merekap transaksi pesanan dari pembeli yang berada di Indonesia. Untuk menghindari kesalahan dalam pembelian barang oleh pelaku jastip, program aplikasi ini mampu mengelompokkan pesanan berdasarkan jenis barang dan negara tujuan barang yang dipesan oleh customer. Selain itu, tersedia juga layanan konversi mata uang, sehingga pelaku jastip tidak perlu kesulitan dalam mengonversi mata uang luar negeri ke rupiah. Beberapa fitur yang ditawarkan oleh program ini, yaitu :
     1.	Melakukan pencatatan pesanan Anda
     2.	Melihat pesanan secara langsung
     3.	Menyimpan database pesanan dan pelanggan dalam bentuk csv/excel
