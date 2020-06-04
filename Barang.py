@@ -20,24 +20,24 @@ class BarangJual:
         return getattr(self, "_menu_" + str(kode), lambda: self._default)()
 
     def listBarang(self):
-        print("Daftar kategori : ")
+        print("Daftar barang : ")
         kategori = self._get_kategori()
         if len(kategori) != 0:
             for index, text in enumerate(self.get_kategori()):
                 print("\t" + str(index + 1) + "." + text)
         else:
-            print("Kategori kosong")
+            print("Daftar barang kosong")
 
     def _menu_1(self):
-        name = input("Masukkan nama kategori : ")
+        name = input("Masukkan nama barang : ")
         harga = float(input("Masukkan harga(" + self._country_name + ") : "))
         if self._add_kategori(name, harga):
-            print("Kategori telah di tambahkan :")
+            print("Barang telah di tambahkan :")
             for index, text in enumerate(self.get_kategori()):
                 print("\t" + str(index + 1) + ". " + text)
             print("\n")
         else:
-            print("Kategori sudah ada")
+            print("Barang sudah ada")
 
     def _menu_2(self):
         if len(self._get_kategori()) != 0:
