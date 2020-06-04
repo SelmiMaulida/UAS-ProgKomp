@@ -7,9 +7,9 @@ Program aplikasi pendataan jasa titip luar negeri dirancang khusus bagi pengguna
 
 Untuk menghindari kesalahan dalam pembelian barang oleh pelaku jastip, program aplikasi ini mampu mengelompokkan pesanan berdasarkan jenis barang dan negara tujuan barang yang dipesan oleh customer. Selain itu, tersedia juga layanan konversi mata uang, sehingga pelaku jastip tidak perlu kesulitan dalam mengonversi mata uang luar negeri ke rupiah. Beberapa fitur yang ditawarkan oleh program ini, yaitu :
 
-* 1. Melakukan pencatatan pesanan Anda
-* 2. Melihat pesanan secara langsung
-* 3. Menyimpan database pesanan dan pelanggan dalam bentuk csv/excel
+* Melakukan pencatatan pesanan Anda
+* Melihat pesanan secara langsung
+* Menyimpan database pesanan dan pelanggan dalam bentuk csv/excel
 
 ## Tahapan penggunaan program aplikasi pendataam jasa titip luar negeri :
 a) Menampilkan pilihan menu awal, pengguna diminta input menu yang dipilih.
@@ -31,9 +31,9 @@ f) Jika pengguna memilih opsi `3. Hapus Negara`, maka pengguna diminta input  no
 
 g) Apabila pengguna memilih `2. Mulai Pendataan Pesanan`, maka akan muncul daftar negara jastip yang telah di-input-kan oleh pengguna. Pengguna diminta input nomor negara tujuan, lalu akan muncul sub menu :
 
-* 1. Lihat Pesanan
-* 2. Tambah Pesanan
-* 3. Hapus Pesanan
+* `1. Lihat Pesanan`
+* `2. Tambah Pesanan`
+* `3. Hapus Pesanan`
 
 h) Jika pengguna memilih opsi `1. Lihat Pesanan`, maka program akan menampilkan daftar pesanan yang telah di¬-input¬-kan. Namun jika pengguna belum meng-input pesanan, maka program akan mencetak “Belum ada pesanan”. Pengguna diarahkan untuk menambahkan pesanan di opsi `2. Tambah Pesanan`.
 
