@@ -27,9 +27,26 @@ class MenuPesanan:
         print("invalid code, pick again")
 
     def _menu_1(self):
-        if len(self._get_list_person()) == 0:
-            print("Belum ada pesanan")
-        else:
+        name_person = input("Masukkan nama pemesan : ")
+        if (name_person+"\n") not in self._get_list_person():
+            _file = open(self._file_person_name, "a")
+            _file.write(name_person + "\n")
+            _file.close()
+
+        produk_iterasi = True
+        while produk_iterasi:
+            system("cls")
+            print("\tPesanan untuk " + name_person)
+            menuBarang = BarangJual(self._country_name)
+            menuPerson = Person(self._country_name, name_person)
+            print("Pilih Produk :")
+            for index, product in enumerate(menuBarang.get_kategori()):
+                print(str(index + 1) + ". " + product)
+            index_product = int(input("Pilihan : ")) - 1
+            jumlah_barang = int(input("Jumlah barang : "))
+            menuPerson.add_product(menuBarang.get_kategori()[index_product], jumlah_barang)
+            print("Berhasil menambahkan data!")
+            
             with open(self._file_pesanan_csv, mode="w", newline="") as _file_open:
                 _header = ["No", "Nama", "Barang", "Harga Barang", "Jumlah", "Total Harga(" + self._country_name + ")",
                            "Total Harga(INA)"]
@@ -68,27 +85,6 @@ class MenuPesanan:
 
                 print("\tCetak list pesanan berdasarkan")
                 print("\tSilahkan cek file pesanan.csv di folder [" + self._country_name + "]")
-
-    def _menu_2(self):
-        name_person = input("Masukkan nama pemesan : ")
-        if (name_person+"\n") not in self._get_list_person():
-            _file = open(self._file_person_name, "a")
-            _file.write(name_person + "\n")
-            _file.close()
-
-        produk_iterasi = True
-        while produk_iterasi:
-            system("cls")
-            print("\tPesanan untuk " + name_person)
-            menuBarang = BarangJual(self._country_name)
-            menuPerson = Person(self._country_name, name_person)
-            print("Pilih Produk :")
-            for index, product in enumerate(menuBarang.get_kategori()):
-                print(str(index + 1) + ". " + product)
-            index_product = int(input("Pilihan : ")) - 1
-            jumlah_barang = int(input("Jumlah barang : "))
-            menuPerson.add_product(menuBarang.get_kategori()[index_product], jumlah_barang)
-            print("Berhasil menambahkan data!")
             produk_iterasi = True if input("ingin menambah barang lagi?(y,n)") == "y" else False
 
     def _get_list_person(self):
