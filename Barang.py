@@ -23,8 +23,8 @@ class BarangJual:
         print("Daftar kategori : ")
         kategori = self._get_kategori()
         if len(kategori) != 0:
-            for text in kategori:
-                print("\t1." + text)
+            for index, text in enumerate(self.get_kategori()):
+                print("\t" + str(index + 1) + "." + text)
         else:
             print("Kategori kosong")
 
