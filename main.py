@@ -48,9 +48,9 @@ class MainMenu :
 if __name__ == "__main__":
   menu = MainMenu()
   iterasi = True
-   print("--------------------------------------------------------------------")
-   print("----------SELAMAT DATANG DI JASA TITIP BARANG LUAR NEGERI-----------")
-   print("--------------------------------------------------------------------")
+   print("------------------------------------------------------------------------------")
+   print("----------SELAMAT DATANG DI PENDATAAN JASA TITIP BARANG LUAR NEGERI-----------")
+   print("------------------------------------------------------------------------------")
   while iterasi :
     print("\tPilih menu")
     print("\t 1. List Negara\n"
