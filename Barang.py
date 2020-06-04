@@ -33,7 +33,8 @@ class BarangJual:
         harga = float(input("Masukkan harga(" + self._country_name + ") : "))
         if self._add_kategori(name, harga):
             print("Kategori telah di tambahkan :")
-            print(self._get_kategori())
+            for index, text in enumerate(self.get_kategori()):
+                print("\t" + str(index + 1) + ". " + text)
             print("\n")
         else:
             print("Kategori sudah ada")
