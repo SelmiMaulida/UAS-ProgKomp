@@ -18,10 +18,10 @@ class MenuNegara:
     def _menu_1(self):
         print("\n")
         country_name = input("Masukkan nama negara : ")
-        country_kurs = input("Masukkan nilai kurs ke INA : ")
+        country_kurs = float(input("Masukkan nilai kurs ke INA : "))
         if country_name not in self.listNegara():
             __file = open("country_list.txt", "a")
-            __file.Write(country_name + "," + country_kurs + "\n")
+            __file.Write(country_name + "," + str(country_kurs) + "\n")
             __file.close()
             print("Berhasil menambahkan negara")
         else:
