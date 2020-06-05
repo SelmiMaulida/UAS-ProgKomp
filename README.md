@@ -27,10 +27,9 @@ b) Apabila pengguna memilih `1. List Negara`, maka akan muncul daftar Negara Jas
 * `3. Hapus Negara`
 
 c) Apabila pengguna memilih `2. Mulai Pendataan Pesanan`, maka akan muncul daftar negara jastip yang telah di-input-kan oleh pengguna. Pengguna diminta input nomor negara tujuan, lalu akan muncul sub menu :
-
-* `1. Lihat Pesanan`
-* `2. Tambah Pesanan`
-* `3. Hapus Pesanan`
+`
+* `1. Tambah Pesanan`
+* `2. Hapus Pesanan`
 
 # Requirements
 1. using python 3.6.5
