@@ -16,7 +16,7 @@ Untuk menghindari kesalahan dalam pembelian barang oleh pelaku jastip, program a
 2. Run file name pendataan_jastip_LN
 3. Goodluck!
 
-## Fitur program aplikasi pendataam jasa titip luar negeri :
+## Fitur program aplikasi pendataan jasa titip luar negeri :
 a) Menampilkan pilihan menu awal, pengguna diminta input menu yang dipilih.
 * `1. List Negara`
 * `2. Mulai Pendataan Pesanan`
