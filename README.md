@@ -11,6 +11,11 @@ Untuk menghindari kesalahan dalam pembelian barang oleh pelaku jastip, program a
 * Melihat pesanan secara langsung
 * Menyimpan database pesanan dan pelanggan dalam bentuk csv/excel
 
+## How to run the Program
+1. Download the program into zip file
+2. Run file name pendataan_jastip_LN
+3. Goodluck!
+
 ## Tahapan penggunaan program aplikasi pendataam jasa titip luar negeri :
 a) Menampilkan pilihan menu awal, pengguna diminta input menu yang dipilih.
 * `1. List Negara`
