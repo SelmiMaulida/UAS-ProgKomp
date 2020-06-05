@@ -34,3 +34,4 @@ c) Apabila pengguna memilih `2. Mulai Pendataan Pesanan`, maka akan muncul dafta
 
 # Requirements
 1. using python 3.6.5
+2. using OS Windows only 
