@@ -32,5 +32,5 @@ c) Apabila pengguna memilih `2. Mulai Pendataan Pesanan`, maka akan muncul dafta
 * `2. Hapus Pesanan`
 
 # Requirements
-1. using python 3.6.5
+1. using python 3
 2. using OS Windows only 
