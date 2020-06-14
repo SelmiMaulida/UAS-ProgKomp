@@ -21,7 +21,7 @@ class Person:
             __file.write(product + "," + str(amount) + "\n")
             __file.close()
         else:
-            print("Produk sudah ditambahkan")
+            print("Barang sudah ditambahkan")
 
     def get_raw_product(self):
         __file = open(self._name_kategori_file, "r")
