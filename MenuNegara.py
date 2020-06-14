@@ -38,7 +38,7 @@ class MenuNegara:
             iterasi = True
             while iterasi:
                 self._menuEditBarangNegara(index_country)
-                iterasi = True if input("do you want to quit? (y/n)") == "n" else False
+                iterasi = True if input("Apakah edit Barang Negara sudah selesai? (y/n)") == "n" else False
         else:
             print("Negara belum ada, silahkan menambahkan negara terlebih dahulu")
 
