@@ -30,7 +30,7 @@ class MainMenu:
                   "\t3. Hapus Negara")
             menu_code = int(input("PIlihan : "))
             menuNegara.switch(menu_code)
-            _iterasi = True if (input("do you want to quit?(y/n) ") == "n") else False
+            _iterasi = True if (input("Apakah Anda ingin keluar dari menu 1. List Negara? (y/n) ") == "n") else False
 
     def _menu_2(self):
         print("\n\n")
@@ -50,7 +50,7 @@ class MainMenu:
                 menu_code = 1
                 menu_pesanan = MenuPesanan(menuNegara.listNegara()[index_country])
                 menu_pesanan.switch(menu_code)
-                iterasi = True if (input("do you want to quit?(y/n) ") == "n") else False
+                iterasi = True if (input("Apakah Anda ingin keluar dari menu 2. Mulai Pendataan Pesanan? (y/n) ") == "n") else False
 
 
 if __name__ == "__main__":
