@@ -65,5 +65,5 @@ if __name__ == "__main__":
               "\t 2. Mulai Pendataan Pesanan")
         menu_kode = int(input("Pilih menu : "))
         menu.switch(menu_kode)
-        iterasi = True if (input("start again?(y/n) ") == "y") else False
+        iterasi = True if (input("Apakah Anda ingin kembali ke menu awal?(y/n) ") == "y") else False
                     
