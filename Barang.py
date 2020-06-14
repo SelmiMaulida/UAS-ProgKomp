@@ -30,7 +30,7 @@ class BarangJual:
 
     def _menu_1(self):
         name = input("Masukkan nama barang : ")
-        harga = float(input("Masukkan harga dalam angka saja(" + self._country_name + ") : "))
+        harga = float(input("Masukkan harga barang dalam angka saja(" + self._country_name + ") : "))
         if self._add_kategori(name, harga):
             print("Barang telah di tambahkan :")
             for index, text in enumerate(self.get_kategori()):
