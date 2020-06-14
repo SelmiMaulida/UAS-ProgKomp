@@ -41,7 +41,7 @@ class BarangJual:
 
     def _menu_2(self):
         if len(self.get_kategori()) != 0:
-            index_barang = int(input("Pilih barang yang ingin di hapus: ")) - 1
+            index_barang = int(input("Pilih barang yang ingin di hapus(Jika ada pesanan, maka pesanan otomatis terhapus): ")) - 1
             list_raw = self.get_raw_kategori()
             list_person = self._get_list_person(self._country_name)
             if len(list_person)!=0:
